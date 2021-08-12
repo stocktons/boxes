@@ -9,7 +9,7 @@ import React, { useState } from "react";
  */
 
 function NewBoxForm({ addBox }) {
-  const initialState = { height: "", width: "", backgroundColor: "" };
+  const initialState = { height: "", width: "", color: "" };
   const [formData, setFormData] = useState(initialState);
   console.log(formData, "THIS IS THE FORM DATA FROM NEWBOXFORM");
 
@@ -65,11 +65,11 @@ function NewBoxForm({ addBox }) {
         onChange={handleChange}
       />
 
-      <label htmlFor="backgroundColor">Color:</label>
+      <label htmlFor="color">Color:</label>
       <input
-        id="backgroundColor"
-        name="backgroundColor"
-        value={formData.backgroundColor}
+        id="color"
+        name="color"
+        value={formData.color}
         onChange={handleChange}
       />
 

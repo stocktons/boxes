@@ -5,8 +5,8 @@ function Box({ id, color, height, width }) {
         <div className="Box" 
              id={id} 
              style={{ backgroundColor: color, 
-                      width: width,
-                      height: height 
+                      width: `${width}px`,
+                      height: `${height}px`
                       }}
         >
         </div>
